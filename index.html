@@ -17,105 +17,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Peter Kahenya · Data Scientist, Python & JS. I build scalable platforms that delight users."
+      content="Peter Kahenya is a software engineer in Nairobi building agentic AI workflows, scalable backend platforms and data pipelines."
     />
-    <meta name="author" content="Peter Kahenya · Data Scientist, Python & JS" />
-    <title>Peter Kahenya</title>
+    <meta name="author" content="Peter Kahenya" />
+    <title>Peter Kahenya · Software Engineer</title>
     <link rel="canonical" href="https://peterkahenya.com/" />
+
+    <!-- Link previews (Open Graph / Twitter) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Peter Kahenya" />
+    <meta property="og:title" content="Peter Kahenya · Software Engineer" />
+    <meta
+      property="og:description"
+      content="Software engineer in Nairobi building agentic AI workflows, scalable backend platforms and data pipelines."
+    />
+    <meta property="og:url" content="https://peterkahenya.com/" />
+    <meta name="twitter:card" content="summary" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="assets/img/icon.png" sizes="180x180" />
+    <link
+      rel="apple-touch-icon"
+      href="assets/img/apple-touch-icon.png"
+      sizes="180x180"
+    />
     <link
       rel="icon"
-      href="assets/img/icon.png"
+      href="assets/img/favicon-32.png"
       sizes="32x32"
       type="image/png"
     />
     <link
       rel="icon"
-      href="assets/img/icon.png"
+      href="assets/img/favicon-16.png"
       sizes="16x16"
       type="image/png"
     />
     <meta name="theme-color" content="#01b33c" />
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, 0.1);
-        border: solid rgba(0, 0, 0, 0.15);
-        border-width: 1px 0;
-        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
       .bi {
         vertical-align: -0.125em;
         fill: currentColor;
       }
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
+      /* Bootstrap's success green: white on it is 4.5:1 (#01b33c was 2.8:1) */
       .btn-bd-primary {
-        --bd-accent-bg: #01b33c;
-        --bd-accent-rgb: 1, 179, 60;
+        --bd-accent-bg: #198754;
+        --bd-accent-rgb: 25, 135, 84;
 
         --bs-btn-font-weight: 600;
         --bs-btn-color: var(--bs-white);
         --bs-btn-bg: var(--bd-accent-bg);
         --bs-btn-border-color: var(--bd-accent-bg);
         --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #01b33c;
-        --bs-btn-hover-border-color: #01b33c;
+        --bs-btn-hover-bg: #157347;
+        --bs-btn-hover-border-color: #146c43;
         --bs-btn-focus-shadow-rgb: var(--bd-accent-rgb);
         --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #01b33c;
-        --bs-btn-active-border-color: #01b33c;
+        --bs-btn-active-bg: #146c43;
+        --bs-btn-active-border-color: #13653f;
       }
 
       .bd-mode-toggle {
         z-index: 1500;
       }
 
+      /* Show the check mark next to the selected theme */
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+
       body {
+        font-family: Arial, Helvetica, sans-serif;
         background-image: linear-gradient(
           180deg,
           var(--bs-secondary-bg),
@@ -135,14 +109,11 @@
       @font-face {
         font-family: "Asul";
         src: url("assets/img/Asul-Regular.ttf") format("truetype");
+        font-display: swap;
       }
 
       .title {
-        font-family: "Asul", sans-serif; /* Use the font in your styles */
-      }
-
-      body {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Asul", sans-serif;
       }
     </style>
     <link rel="stylesheet" href="assets/css/kahenya.css" />
@@ -247,15 +218,6 @@
         </li>
       </ul>
     </div>
-
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check" viewBox="0 0 16 16">
-        <title>Check</title>
-        <path
-          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
-        />
-      </symbol>
-    </svg>
 
     <div class="container py-4">
       <header>
@@ -415,194 +377,176 @@
         <hr />
         <!-- Experience -->
         <div class="container">
-          <div class="row align-items-start justify-content-end">
-            <div class="">
-              <div class="">
-                <div id="content">
-                  <h3 class="title text-success">Experience</h3>
-                  <ul class="timeline">
-                    <li class="event" data-date="Aug 2025 - Present">
-                      <h3>Forward Deployed Engineer - Turing</h3>
-                      <ul>
-                        <li>
-                          Forward deployed to design and implement agentic
-                          workflows and transformation.
-                        </li>
-                        <li>
-                          Built agentic tools and MCP services to interface
-                          with third-party LLMs.
-                        </li>
-                        <li>
-                          Built reinforcement learning environments (gyms) for
-                          fine-tuning and evaluating agents on tool use and
-                          computer use.
-                        </li>
-                        <li>
-                          Designed, implemented and deployed services as
-                          modular, production-ready APIs.
-                        </li>
-                        <li>
-                          Designed and iterated on scalable database schemas
-                          for each service integration.
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="event" data-date="Mar 2025 - Jul 2025">
-                      <h3>Lead Backend Engineer (Contract) - VibesMeet LLC</h3>
-                      <ul>
-                        <li>
-                          Broke a monolithic system into microservices deployed
-                          on AWS Lambda with Python, improving developer
-                          experience and user response times by 35%.
-                        </li>
-                        <li>
-                          Built a recommendation engine for contact suggestions
-                          and a "For You" content feed, doubling engagement and
-                          user retention. This involved customizing a
-                          transformer model on AWS Personalize and building a
-                          feedback ETL pipeline for continuous improvement and
-                          retraining.
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="event" data-date="Nov 2023 - Mar 2025">
-                      <h3>Senior Fullstack Engineer - Humentum</h3>
-                      <ul>
-                        <li>
-                          Led design and development of a training platform
-                          (<a href="https://my.humentum.org">My Humentum</a>)
-                          integrated with third-party tools, serving over 16K
-                          users a month in the not-for-profit sector across 15+
-                          countries.
-                        </li>
-                        <li>
-                          Built a data pipeline to ingest, clean and transform
-                          multi-source data for dashboards used by 50+
-                          organization heads and 5 funders, giving them a
-                          real-time view of program impact and needed
-                          interventions. Delivered end-to-end with Airflow,
-                          Alteryx and Microsoft Fabric.
-                        </li>
-                        <li>
-                          Automated compliance and reporting workflows, cutting
-                          execution time by 50%, including continuous KYC and
-                          sanctions checks against funder and organization
-                          standards using Zapier and Make.
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="event" data-date="Mar 2021 - Nov 2023">
-                      <h3>Senior Associate, Tax Technology - PwC</h3>
-                      <ul>
-                        <li>
-                          Led development of bespoke applications and
-                          microservices for international reporting and
-                          compliance, including e-invoicing, real-time reporting
-                          dashboards and a management services tracking
-                          platform.
-                        </li>
-                        <li>
-                          Set up RPA (UiPath) and ETL infrastructure (Alteryx,
-                          Power BI), reducing audit effort by 60%.
-                        </li>
-                        <li>
-                          Worked with C-suite leaders in East Africa to
-                          understand their challenges and co-create technology
-                          solutions.
-                        </li>
-                        <li>
-                          Mentored associate staff in developing their skills
-                          and competencies.
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="event" data-date="Oct 2019 - Dec 2020">
-                      <h3>Software Engineer - Kipya Africa</h3>
-                      <ul>
-                        <li>
-                          Built an e-commerce platform with real-time video and
-                          chat support for remote diagnostics and booking,
-                          reaching 1K+ users.
-                        </li>
-                        <li>
-                          Built marketing tools: newsletters, ad-efficiency
-                          tracking and event management systems.
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h3 class="title text-success">Experience</h3>
+          <ul class="timeline">
+            <li class="event" data-date="Aug 2025 - Present">
+              <h4>Forward Deployed Engineer - Turing</h4>
+              <ul>
+                <li>
+                  Forward deployed to design and implement agentic
+                  workflows and transformation.
+                </li>
+                <li>
+                  Built agentic tools and MCP services to interface
+                  with third-party LLMs.
+                </li>
+                <li>
+                  Built reinforcement learning environments (gyms) for
+                  fine-tuning and evaluating agents on tool use and
+                  computer use.
+                </li>
+                <li>
+                  Designed, implemented and deployed services as
+                  modular, production-ready APIs.
+                </li>
+                <li>
+                  Designed and iterated on scalable database schemas
+                  for each service integration.
+                </li>
+              </ul>
+            </li>
+            <li class="event" data-date="Mar 2025 - Jul 2025">
+              <h4>Lead Backend Engineer (Contract) - VibesMeet LLC</h4>
+              <ul>
+                <li>
+                  Broke a monolithic system into microservices deployed
+                  on AWS Lambda with Python, improving developer
+                  experience and user response times by 35%.
+                </li>
+                <li>
+                  Built a recommendation engine for contact suggestions
+                  and a "For You" content feed, doubling engagement and
+                  user retention. This involved customizing a
+                  transformer model on AWS Personalize and building a
+                  feedback ETL pipeline for continuous improvement and
+                  retraining.
+                </li>
+              </ul>
+            </li>
+            <li class="event" data-date="Nov 2023 - Mar 2025">
+              <h4>Senior Fullstack Engineer - Humentum</h4>
+              <ul>
+                <li>
+                  Led design and development of a training platform
+                  (<a href="https://my.humentum.org">My Humentum</a>)
+                  integrated with third-party tools, serving over 16K
+                  users a month in the not-for-profit sector across 15+
+                  countries.
+                </li>
+                <li>
+                  Built a data pipeline to ingest, clean and transform
+                  multi-source data for dashboards used by 50+
+                  organization heads and 5 funders, giving them a
+                  real-time view of program impact and needed
+                  interventions. Delivered end-to-end with Airflow,
+                  Alteryx and Microsoft Fabric.
+                </li>
+                <li>
+                  Automated compliance and reporting workflows, cutting
+                  execution time by 50%, including continuous KYC and
+                  sanctions checks against funder and organization
+                  standards using Zapier and Make.
+                </li>
+              </ul>
+            </li>
+            <li class="event" data-date="Mar 2021 - Nov 2023">
+              <h4>Senior Associate, Tax Technology - PwC</h4>
+              <ul>
+                <li>
+                  Led development of bespoke applications and
+                  microservices for international reporting and
+                  compliance, including e-invoicing, real-time reporting
+                  dashboards and a management services tracking
+                  platform.
+                </li>
+                <li>
+                  Set up RPA (UiPath) and ETL infrastructure (Alteryx,
+                  Power BI), reducing audit effort by 60%.
+                </li>
+                <li>
+                  Worked with C-suite leaders in East Africa to
+                  understand their challenges and co-create technology
+                  solutions.
+                </li>
+                <li>
+                  Mentored associate staff in developing their skills
+                  and competencies.
+                </li>
+              </ul>
+            </li>
+            <li class="event" data-date="Oct 2019 - Dec 2020">
+              <h4>Software Engineer - Kipya Africa</h4>
+              <ul>
+                <li>
+                  Built an e-commerce platform with real-time video and
+                  chat support for remote diagnostics and booking,
+                  reaching 1K+ users.
+                </li>
+                <li>
+                  Built marketing tools: newsletters, ad-efficiency
+                  tracking and event management systems.
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
 
         <!-- Qualifications -->
         <hr />
         <div class="container">
           <h3 class="title text-success">Qualifications</h3>
-          <figure class="m-4">
-            <blockquote class="blockquote">
-              <p>Bachelor of Science, Computer Science</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              Sep 2015 - Sep 2019 <cite>University of Nairobi</cite>
-            </figcaption>
-          </figure>
-          <figure class="m-4">
-            <blockquote class="blockquote">
-              <p>McKinsey.org Forward Program</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              Dec 2025
-              <cite>McKinsey.org</cite>
-              <a
-                href="https://www.credly.com/badges/7bc81a79-0a1b-4fe3-be9b-980745195a1e"
-                >Badge</a
-              >
-            </figcaption>
-          </figure>
-          <figure class="m-4">
-            <blockquote class="blockquote">
-              <p>Agentic Design with LangGraph</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              Aug 2025 - Sep 2025 <cite>LangChain</cite>
-            </figcaption>
-          </figure>
-          <figure class="m-4">
-            <blockquote class="blockquote">
-              <p>
+          <ul class="list-unstyled m-4">
+            <li class="mb-4">
+              <p class="fs-5 mb-1">Bachelor of Science, Computer Science</p>
+              <p class="small text-body-secondary mb-0">
+                Sep 2015 - Sep 2019 · <cite>University of Nairobi</cite>
+              </p>
+            </li>
+            <li class="mb-4">
+              <p class="fs-5 mb-1">McKinsey.org Forward Program</p>
+              <p class="small text-body-secondary mb-0">
+                Dec 2025 · <cite>McKinsey.org</cite> ·
+                <a
+                  href="https://www.credly.com/badges/7bc81a79-0a1b-4fe3-be9b-980745195a1e"
+                  >Badge</a
+                >
+              </p>
+            </li>
+            <li class="mb-4">
+              <p class="fs-5 mb-1">Agentic Design with LangGraph</p>
+              <p class="small text-body-secondary mb-0">
+                Aug 2025 - Sep 2025 · <cite>LangChain</cite>
+              </p>
+            </li>
+            <li class="mb-4">
+              <p class="fs-5 mb-1">
                 Large Language Models: Foundation Models from the Ground Up
                 &amp; LLM Applications through Production
               </p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              May 2023 - May 2024
-              <cite>Databricks on edX</cite>
-              <a
-                href="https://courses.edx.org/certificates/13feabda8ab24c0fa8fc326654c77ac6"
-                >Foundation Models certificate</a
-              >
-              ·
-              <a
-                href="https://courses.edx.org/certificates/15cd73c7a52048419f2163cb5e82e164"
-                >Applications certificate</a
-              >
-            </figcaption>
-          </figure>
-          <figure class="m-4">
-            <blockquote class="blockquote">
-              <p>Data Science and Machine Learning</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              Jan 2023 - Jul 2023
-              <cite>Africa Data School (Nairobi)</cite>
-              <a href="assets/docs/Peter Kahenya ADS Certificate.pdf"
-                >Certificate</a
-              >
-            </figcaption>
-          </figure>
+              <p class="small text-body-secondary mb-0">
+                May 2023 - May 2024 · <cite>Databricks on edX</cite> ·
+                <a
+                  href="https://courses.edx.org/certificates/13feabda8ab24c0fa8fc326654c77ac6"
+                  >Foundation Models certificate</a
+                >
+                ·
+                <a
+                  href="https://courses.edx.org/certificates/15cd73c7a52048419f2163cb5e82e164"
+                  >Applications certificate</a
+                >
+              </p>
+            </li>
+            <li>
+              <p class="fs-5 mb-1">Data Science and Machine Learning</p>
+              <p class="small text-body-secondary mb-0">
+                Jan 2023 - Jul 2023 · <cite>Africa Data School (Nairobi)</cite>
+                ·
+                <a href="assets/docs/Peter%20Kahenya%20ADS%20Certificate.pdf"
+                  >Certificate</a
+                >
+              </p>
+            </li>
+          </ul>
         </div>
 
         <!-- Projects section -->
