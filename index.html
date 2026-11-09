@@ -353,7 +353,7 @@
                 <th scope="row" class="text-nowrap">AI &amp; Agents</th>
                 <td>
                   OpenAI GPT, Claude, Gemini, LangGraph, MCP, Vertex AI,
-                  SageMaker
+                  SageMaker, AWS Personalize
                 </td>
               </tr>
               <tr>
@@ -371,12 +371,17 @@
               <tr>
                 <th scope="row" class="text-nowrap">Cloud &amp; DevOps</th>
                 <td>
-                  AWS, Kubernetes, GitHub Actions, Pub/Sub, Grafana LGTM stack
+                  AWS (Lambda), Kubernetes, GitHub Actions, Pub/Sub, Grafana
+                  LGTM stack
                 </td>
               </tr>
               <tr>
-                <th scope="row" class="text-nowrap">Data &amp; Automation</th>
-                <td>Airflow, Alteryx, Zapier, n8n</td>
+                <th scope="row" class="text-nowrap">Data &amp; BI</th>
+                <td>Airflow, Alteryx, Microsoft Fabric, Power BI</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-nowrap">Automation &amp; RPA</th>
+                <td>Zapier, Make, n8n, UiPath</td>
               </tr>
             </tbody>
           </table>
@@ -579,90 +584,42 @@
         <hr />
         <div class="container">
           <h3 class="title text-success">Select Projects</h3>
-          <div
-            class="d-flex flex-wrap align-items-stretch justify-content-start"
-          >
-            <div
-              class="card m-3 border"
-              style="max-width: 20rem; max-height: 18rem"
-            >
-              <div class="card-header border-0">ReceiptIQ</div>
-              <div class="card-body">
-                <p class="card-text">
-                  One tool to extract data from receipts and manage your
-                  workflow.
-                </p>
-                <p class="text-muted">
-                  ReceiptIQ helps teams process receipts faster, smarter and
-                  more efficiently, delivering the visibility and data-driven
-                  insights to mitigate risk and ensure compliance.
-                </p>
-                <div class="text-small">
-                  <a href="https://receiptiq.co/">receiptiq</a>
-                </div>
-              </div>
-            </div>
-            <div
-              class="card m-3 border"
-              style="max-width: 20rem; max-height: 18rem"
-            >
-              <div class="card-header border-0">Hummingbird</div>
-              <div class="card-body">
-                <p class="card-text">
-                  Customizable, Feature complete, lightweight payroll software
-                  supporting single and multi-employer features as well as a
-                  flexible review approval cycle.
-                </p>
-                <div class="text-small">
-                  <a href="https://github.com/PeterKahenya/hummingbird"
-                    >hummingbird</a
+          <div class="row row-cols-1 row-cols-md-2 g-3">
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body py-2">
+                  <h4 class="h6 mb-1">ReceiptIQ</h4>
+                  <p class="card-text small mb-1">
+                    Extract data from receipts and manage your workflow.
+                  </p>
+                  <a
+                    class="small"
+                    href="https://github.com/brawl-ai/receiptiq_api"
+                    >receiptiq_api</a
+                  >
+                  ·
+                  <a
+                    class="small"
+                    href="https://github.com/brawl-ai/receiptiq_web"
+                    >receiptiq_web</a
                   >
                 </div>
               </div>
             </div>
-            <div
-              class="card m-3 border"
-              style="max-width: 20rem; max-height: 18rem"
-            >
-              <div class="card-header border-0">Dew</div>
-              <div class="card-body">
-                <p class="card-text">
-                  This is a tiny task/todo management app that supports
-                  adding/updating tasks, marking tasks as complete, and
-                  intelligently searching your tasks
-                </p>
-                <div class="text-small">
-                  <a href="https://github.com/PeterKahenya/dew">dew</a>
-                </div>
-              </div>
-            </div>
-            <div
-              class="card m-3 border"
-              style="max-width: 20rem; max-height: 18rem"
-            >
-              <div class="card-header border-0">Plant Cure</div>
-              <div class="card-body">
-                <p class="card-text">
-                  This is a vision(CNN-based) model to detect plant diseases
-                  from images of infected leaves
-                </p>
-                <div class="text-small">
-                  <a href="https://github.com/PeterKahenya/plant_cure"
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body py-2">
+                  <h4 class="h6 mb-1">Plant Cure</h4>
+                  <p class="card-text small mb-1">
+                    CNN-based vision model that detects plant diseases from
+                    images of infected leaves.
+                  </p>
+                  <a
+                    class="small"
+                    href="https://github.com/PeterKahenya/plant_cure"
                     >plant_cure</a
                   >
                 </div>
-              </div>
-            </div>
-            <div class="card m-3 border" style="max-width: 20rem">
-              <div class="card-header border-0">Tawi</div>
-              <div class="card-body">
-                <p class="card-text">
-                  Template Repo for a django, gunicorn, nginx, docker, k8s,
-                  digitalocean, github-actions CI/CD pipeline
-                </p>
-                <a class="card-link" href="https://github.com/PeterKahenya/tawi"
-                  >tawi</a
-                >
               </div>
             </div>
           </div>
