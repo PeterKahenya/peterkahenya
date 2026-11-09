@@ -15,116 +15,146 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="Peter Kahenya · Data Scientist, Python & JS" />
-    <meta name="generator" content="Hugo 0.115.4" />
-    <title>Peter Kahenya</title>
-    <link rel="canonical" href="https://kahenya.io" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
+    <meta
+      name="description"
+      content="Peter Kahenya is a software engineer in Nairobi building agentic AI workflows, scalable backend platforms and data pipelines."
     />
+    <meta name="author" content="Peter Kahenya" />
+    <title>Peter Kahenya · Software Engineer</title>
+    <link rel="canonical" href="https://peterkahenya.com/" />
+
+    <!-- Link previews (Open Graph / Twitter) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Peter Kahenya" />
+    <meta property="og:title" content="Peter Kahenya · Software Engineer" />
+    <meta
+      property="og:description"
+      content="Software engineer in Nairobi building agentic AI workflows, scalable backend platforms and data pipelines."
+    />
+    <meta property="og:url" content="https://peterkahenya.com/" />
+    <meta
+      property="og:image"
+      content="https://peterkahenya.com/assets/img/og-card.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Peter Kahenya, Software Engineer: agentic AI workflows, backend platforms, data pipelines"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Structured data: who this site is about (keep in sync with the page) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://peterkahenya.com/#person",
+            "name": "Peter Kahenya",
+            "url": "https://peterkahenya.com/",
+            "email": "mailto:peterkahenyanjoki@gmail.com",
+            "jobTitle": "Software Engineer",
+            "description": "Software engineer in Nairobi building agentic AI workflows, scalable backend platforms and data pipelines.",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Turing",
+              "url": "https://www.turing.com/"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Nairobi",
+              "addressCountry": "KE"
+            },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "University of Nairobi"
+            },
+            "knowsAbout": [
+              "Agentic AI",
+              "Model Context Protocol (MCP)",
+              "Large language models",
+              "Backend engineering",
+              "Data pipelines",
+              "Python",
+              "TypeScript",
+              "AWS",
+              "Kubernetes"
+            ],
+            "sameAs": [
+              "https://github.com/PeterKahenya",
+              "https://www.linkedin.com/in/peter-kahenya/"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://peterkahenya.com/#website",
+            "url": "https://peterkahenya.com/",
+            "name": "Peter Kahenya",
+            "about": { "@id": "https://peterkahenya.com/#person" },
+            "author": { "@id": "https://peterkahenya.com/#person" }
+          }
+        ]
+      }
+    </script>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="assets/img/icon.png" sizes="180x180" />
+    <link
+      rel="apple-touch-icon"
+      href="assets/img/apple-touch-icon.png"
+      sizes="180x180"
+    />
     <link
       rel="icon"
-      href="assets/img/icon.png"
+      href="assets/img/favicon-32.png"
       sizes="32x32"
       type="image/png"
     />
     <link
       rel="icon"
-      href="assets/img/icon.png"
+      href="assets/img/favicon-16.png"
       sizes="16x16"
       type="image/png"
     />
-    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json" />
-    <link
-      rel="mask-icon"
-      href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg"
-      color="#712cf9"
-    />
-    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico" />
-    <meta name="theme-color" content="#712cf9" />
+    <meta name="theme-color" content="#01b33c" />
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, 0.1);
-        border: solid rgba(0, 0, 0, 0.15);
-        border-width: 1px 0;
-        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
       .bi {
         vertical-align: -0.125em;
         fill: currentColor;
       }
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
+      /* Bootstrap's success green: white on it is 4.5:1 (#01b33c was 2.8:1) */
       .btn-bd-primary {
-        --bd-violet-bg: #01b33c;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+        --bd-accent-bg: #198754;
+        --bd-accent-rgb: 25, 135, 84;
 
         --bs-btn-font-weight: 600;
         --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-bg: var(--bd-accent-bg);
+        --bs-btn-border-color: var(--bd-accent-bg);
         --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #01b33c;
-        --bs-btn-hover-border-color: #01b33c;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-hover-bg: #157347;
+        --bs-btn-hover-border-color: #146c43;
+        --bs-btn-focus-shadow-rgb: var(--bd-accent-rgb);
         --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #01b33c;
-        --bs-btn-active-border-color: #01b33c;
+        --bs-btn-active-bg: #146c43;
+        --bs-btn-active-border-color: #13653f;
       }
 
       .bd-mode-toggle {
         z-index: 1500;
       }
 
+      /* Show the check mark next to the selected theme */
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+
       body {
+        font-family: Arial, Helvetica, sans-serif;
         background-image: linear-gradient(
           180deg,
           var(--bs-secondary-bg),
@@ -144,14 +174,11 @@
       @font-face {
         font-family: "Asul";
         src: url("assets/img/Asul-Regular.ttf") format("truetype");
+        font-display: swap;
       }
 
       .title {
-        font-family: "Asul", sans-serif; /* Use the font in your styles */
-      }
-
-      body {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Asul", sans-serif;
       }
     </style>
     <link rel="stylesheet" href="assets/css/kahenya.css" />
@@ -257,15 +284,6 @@
       </ul>
     </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check" viewBox="0 0 16 16">
-        <title>Check</title>
-        <path
-          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
-        />
-      </symbol>
-    </svg>
-
     <div class="container py-4">
       <header>
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center p-2">
@@ -274,20 +292,22 @@
               <img
                 style="height: 250px; width: 250px; border-radius: 10%"
                 src="assets/img/Peter_Kahenya_2023.jpg"
+                alt="Peter Kahenya"
               />
             </div>
             <div
               class="col d-flex flex-column justify-content-center align-items-center"
             >
-              <h2 class="display-6 title">Peter Kahenya</h2>
+              <h1 class="display-6 title">Peter Kahenya</h1>
               <p class="text-body-secondary">
                 I build scalable platforms that delight users!
               </p>
-              <p>...</p>
-              <div class="row align-items-center justify-content-center">
+              <div class="d-flex align-items-center justify-content-center gap-4">
                 <a
                   href="https://github.com/PeterKahenya"
-                  class="col text-success"
+                  class="text-success"
+                  aria-label="GitHub"
+                  title="GitHub"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -304,7 +324,9 @@
                 </a>
                 <a
                   href="https://www.linkedin.com/in/peter-kahenya/"
-                  class="col text-success"
+                  class="text-success"
+                  aria-label="LinkedIn"
+                  title="LinkedIn"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -321,7 +343,9 @@
                 </a>
                 <a
                   href="mailto:peterkahenyanjoki@gmail.com"
-                  class="col text-success"
+                  class="text-success"
+                  aria-label="Email"
+                  title="Email"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -339,6 +363,25 @@
                     />
                   </svg>
                 </a>
+                <a
+                  href="assets/docs/Peter%20Kahenya%20CV%20October%202026.pdf"
+                  class="text-success"
+                  aria-label="CV (PDF)"
+                  title="CV (PDF)"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-file-earmark-person-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0m2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -347,217 +390,284 @@
 
       <main>
         <hr />
+        <!-- About -->
+        <div class="container">
+          <h2 class="h3 title text-success">About</h2>
+          <p>
+            I'm a software engineer based in Nairobi, Kenya. I'm currently a
+            Forward Deployed Engineer at Turing, where I design and build
+            agentic AI workflows, MCP services and the APIs behind them.
+            Before that I led backend engineering at VibesMeet, built training
+            and data platforms at Humentum, and delivered tax technology,
+            automation and analytics solutions at PwC.
+          </p>
+        </div>
+
+        <hr />
         <!-- Skills Section -->
         <div class="container">
-          <h3 class="title text-success">Skills</h3>
-          <ul class="list-group">
-            <li class="list-group-item">Python, Django, FastAPI, Pytorch</li>
-            <li class="list-group-item">JS/TS, React and NextJS</li>
-            <li class="list-group-item">Database - Oracle SQL/MSSQL</li>
-            <li class="list-group-item">Cloud - GCP/AWS</li>
-            <li class="list-group-item">Docker, K8s</li>
-            <li class="list-group-item">Apache Airflow/Databricks</li>
-            <li class="list-group-item">
-              Visualization - PowerBI, Tableau, D3.js
+          <h2 class="h3 title text-success">Skills</h2>
+          <table class="table table-bordered align-middle">
+            <tbody>
+              <tr>
+                <th scope="row" class="text-nowrap">Languages</th>
+                <td>
+                  Python, JavaScript/TypeScript, C++, Kotlin (Android), Rust
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-nowrap">AI &amp; Agents</th>
+                <td>
+                  OpenAI GPT, Claude, Gemini, LangGraph, MCP, Vertex AI,
+                  SageMaker, AWS Personalize
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-nowrap">Backend &amp; APIs</th>
+                <td>Django, FastAPI, Express.js, REST, GraphQL, gRPC</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-nowrap">Frontend</th>
+                <td>React, Next.js, Tailwind CSS</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-nowrap">Databases</th>
+                <td>PostgreSQL, MongoDB, Neo4j, ChromaDB (vector)</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-nowrap">Cloud &amp; DevOps</th>
+                <td>
+                  AWS (Lambda), Kubernetes, GitHub Actions, Pub/Sub, Grafana
+                  LGTM stack
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-nowrap">Data &amp; BI</th>
+                <td>Airflow, Alteryx, Microsoft Fabric, Power BI</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-nowrap">Automation &amp; RPA</th>
+                <td>Zapier, Make, n8n, UiPath</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr />
+        <!-- Experience -->
+        <div class="container">
+          <h2 class="h3 title text-success">Experience</h2>
+          <ul class="timeline">
+            <li class="event" data-date="Aug 2025 - Present">
+              <h3>Forward Deployed Engineer - Turing</h3>
+              <ul>
+                <li>
+                  Forward deployed to design and implement agentic
+                  workflows and transformation.
+                </li>
+                <li>
+                  Built agentic tools and MCP services to interface
+                  with third-party LLMs.
+                </li>
+                <li>
+                  Built reinforcement learning environments (gyms) for
+                  fine-tuning and evaluating agents on tool use and
+                  computer use.
+                </li>
+                <li>
+                  Designed, implemented and deployed services as
+                  modular, production-ready APIs.
+                </li>
+                <li>
+                  Designed and iterated on scalable database schemas
+                  for each service integration.
+                </li>
+              </ul>
             </li>
-            <li class="list-group-item">
-              Automation Tools - Alteryx, Zapier, UiPath
+            <li class="event" data-date="Mar 2025 - Jul 2025">
+              <h3>Lead Backend Engineer (Contract) - VibesMeet LLC</h3>
+              <ul>
+                <li>
+                  Broke a monolithic system into microservices deployed
+                  on AWS Lambda with Python, improving developer
+                  experience and user response times by 35%.
+                </li>
+                <li>
+                  Built a recommendation engine for contact suggestions
+                  and a "For You" content feed, doubling engagement and
+                  user retention. This involved customizing a
+                  transformer model on AWS Personalize and building a
+                  feedback ETL pipeline for continuous improvement and
+                  retraining.
+                </li>
+              </ul>
             </li>
-            <li class="list-group-item">Salesforce CRM, Oracle and SAP ERPs</li>
+            <li class="event" data-date="Nov 2023 - Mar 2025">
+              <h3>Senior Fullstack Engineer - Humentum</h3>
+              <ul>
+                <li>
+                  Led design and development of a training platform
+                  (<a href="https://my.humentum.org">My Humentum</a>)
+                  integrated with third-party tools, serving over 16K
+                  users a month in the not-for-profit sector across 15+
+                  countries.
+                </li>
+                <li>
+                  Built a data pipeline to ingest, clean and transform
+                  multi-source data for dashboards used by 50+
+                  organization heads and 5 funders, giving them a
+                  real-time view of program impact and needed
+                  interventions. Delivered end-to-end with Airflow,
+                  Alteryx and Microsoft Fabric.
+                </li>
+                <li>
+                  Automated compliance and reporting workflows, cutting
+                  execution time by 50%, including continuous KYC and
+                  sanctions checks against funder and organization
+                  standards using Zapier and Make.
+                </li>
+              </ul>
+            </li>
+            <li class="event" data-date="Mar 2021 - Nov 2023">
+              <h3>Senior Associate, Tax Technology - PwC</h3>
+              <ul>
+                <li>
+                  Led development of bespoke applications and
+                  microservices for international reporting and
+                  compliance, including e-invoicing, real-time reporting
+                  dashboards and a management services tracking
+                  platform.
+                </li>
+                <li>
+                  Set up RPA (UiPath) and ETL infrastructure (Alteryx,
+                  Power BI), reducing audit effort by 60%.
+                </li>
+                <li>
+                  Worked with C-suite leaders in East Africa to
+                  understand their challenges and co-create technology
+                  solutions.
+                </li>
+                <li>
+                  Mentored associate staff in developing their skills
+                  and competencies.
+                </li>
+              </ul>
+            </li>
+            <li class="event" data-date="Oct 2019 - Dec 2020">
+              <h3>Software Engineer - Kipya Africa</h3>
+              <ul>
+                <li>
+                  Built an e-commerce platform with real-time video and
+                  chat support for remote diagnostics and booking,
+                  reaching 1K+ users.
+                </li>
+                <li>
+                  Built marketing tools: newsletters, ad-efficiency
+                  tracking and event management systems.
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
 
         <!-- Qualifications -->
         <hr />
         <div class="container">
-          <h3 class="title text-success">Qualifications</h3>
-          <figure class="m-4">
-            <blockquote class="blockquote">
-              <p>BSc. Computer Science</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              2015-2019 <cite title="Source Title"> University of Nairobi</cite>
-            </figcaption>
-          </figure>
-          <figure class="m-4">
-            <blockquote class="blockquote">
-              <p>Large Language Models: Foundation Models from the Ground Up</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              Jan to June-2024
-              <cite title="Source Title">Databricks on Edx</cite>
-              <a
-                href="https://courses.edx.org/certificates/13feabda8ab24c0fa8fc326654c77ac6?_gl=1*1mm38aa*_gcl_aw*R0NMLjE3NDM5MjExMDkuQ2owS0NRandxY09fQmhEYUFSSXNBQ3o2MnZNSWJfN2JidGtrMHdNenY0cjZ2ZUZlS1RKcjdqN0trTkIyN3lFMWFlQTFLZkdNRmJxdkw5Z2FBc2k3RUFMd193Y0I.*_gcl_au*MTQyNzkwODI5MS4xNzQzOTIxMTE1*_ga*MTc2MzU4NDA3NC4xNzQzOTIxMTA5*_ga_D3KS4KMDT0*MTc0MzkyMTEwOS4xLjEuMTc0MzkyMTEzNy4zMi4wLjA."
-                >Certificate
-              </a>
-            </figcaption>
-          </figure>
-          <figure class="m-4">
-            <blockquote class="blockquote">
-              <p>Large Language Models: Application through Production</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              Jul to Dec-2023
-              <cite title="Source Title">Databricks on Edx</cite>
-              <a
-                href="https://courses.edx.org/certificates/15cd73c7a52048419f2163cb5e82e164?_gl=1*4fwxdm*_gcl_aw*R0NMLjE3NDM5MjExMDkuQ2owS0NRandxY09fQmhEYUFSSXNBQ3o2MnZNSWJfN2JidGtrMHdNenY0cjZ2ZUZlS1RKcjdqN0trTkIyN3lFMWFlQTFLZkdNRmJxdkw5Z2FBc2k3RUFMd193Y0I.*_gcl_au*MTQyNzkwODI5MS4xNzQzOTIxMTE1*_ga*MTc2MzU4NDA3NC4xNzQzOTIxMTA5*_ga_D3KS4KMDT0*MTc0MzkyMTEwOS4xLjEuMTc0MzkyMTEzNy4zMi4wLjA."
-                >Certificate
-              </a>
-            </figcaption>
-          </figure>
-          <figure class="m-4">
-            <blockquote class="blockquote">
-              <p>Africa Data School - Data Science & Machine Learning</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              Jan-May-2023
-              <cite title="Source Title">Africa Data School (Nairobi)</cite>
-              <a href="assets/docs/Peter Kahenya ADS Certificate.pdf"
-                >Certificate
-              </a>
-            </figcaption>
-          </figure>
-        </div>
-
-        <hr />
-        <div class="container">
-          <div class="row align-items-start justify-content-end">
-            <div class="">
-              <div class="">
-                <div id="content">
-                  <h3 class="title text-success">Experience</h3>
-                  <ul class="timeline">
-                    <li class="event" data-date="Nov 2023 - Feb 2025">
-                      <!-- <small class="text-small">2021 - present</small> -->
-                      <h3>
-                        Senior Data Analyst and Integrations Engineer - Humentum
-                      </h3>
-                      <p>
-                        I was the lead engineer in charge of platform design and
-                        development, data analytics, technical leadership and a
-                        bit of project management. Key achievements include
-                        <br />
-                        Design and integration of
-                        <a href="my.humentum.org">My Humentum</a>
-                        <br />
-                        Engagement data analytics and reporting
-                      </p>
-                    </li>
-                    <li class="event" data-date="Feb 2021 - Nov 2024">
-                      <!-- <small class="text-small">2021 - present</small> -->
-                      <h3>Senior Technology Associate - PwC Kenya</h3>
-                      <p>
-                        I was responsible for technical leadership from
-                        ideation, through design and rollout of systems and
-                        solutions. The role also includes deliverying data
-                        analytics and automation products and services for
-                        various sectors and leadership levels.
-                      </p>
-                    </li>
-                    <li class="event" data-date="2019 - 2021">
-                      <!-- <small class="text-small">2019 - 2021</small> -->
-                      <h3>Technology Lead - Kipya</h3>
-                      <p>
-                        Developed an expert-guided e-commerce platform and
-                        deployed an IoT platform for remote monitoring among
-                        other awesome projects.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h2 class="h3 title text-success">Qualifications</h2>
+          <ul class="list-unstyled m-4">
+            <li class="mb-4">
+              <p class="fs-5 mb-1">Bachelor of Science, Computer Science</p>
+              <p class="small text-body-secondary mb-0">
+                Sep 2015 - Sep 2019 · <cite>University of Nairobi</cite>
+              </p>
+            </li>
+            <li class="mb-4">
+              <p class="fs-5 mb-1">McKinsey.org Forward Program</p>
+              <p class="small text-body-secondary mb-0">
+                Dec 2025 · <cite>McKinsey.org</cite> ·
+                <a
+                  href="https://www.credly.com/badges/7bc81a79-0a1b-4fe3-be9b-980745195a1e"
+                  >Badge</a
+                >
+              </p>
+            </li>
+            <li class="mb-4">
+              <p class="fs-5 mb-1">Agentic Design with LangGraph</p>
+              <p class="small text-body-secondary mb-0">
+                Aug 2025 - Sep 2025 · <cite>LangChain</cite>
+              </p>
+            </li>
+            <li class="mb-4">
+              <p class="fs-5 mb-1">
+                Large Language Models: Foundation Models from the Ground Up
+                &amp; LLM Applications through Production
+              </p>
+              <p class="small text-body-secondary mb-0">
+                May 2023 - May 2024 · <cite>Databricks on edX</cite> ·
+                <a
+                  href="https://courses.edx.org/certificates/13feabda8ab24c0fa8fc326654c77ac6"
+                  >Foundation Models certificate</a
+                >
+                ·
+                <a
+                  href="https://courses.edx.org/certificates/15cd73c7a52048419f2163cb5e82e164"
+                  >Applications certificate</a
+                >
+              </p>
+            </li>
+            <li>
+              <p class="fs-5 mb-1">Data Science and Machine Learning</p>
+              <p class="small text-body-secondary mb-0">
+                Jan 2023 - Jul 2023 · <cite>Africa Data School (Nairobi)</cite>
+                ·
+                <a href="assets/docs/Peter%20Kahenya%20ADS%20Certificate.pdf"
+                  >Certificate</a
+                >
+              </p>
+            </li>
+          </ul>
         </div>
 
         <!-- Projects section -->
         <hr />
         <div class="container">
-          <h3 class="title text-success">Select Projects</h3>
-          <div
-            class="d-flex flex-wrap align-items-stretch justify-content-start"
-          >
-            <div
-              class="card m-3 border"
-              style="max-width: 20rem; max-height: 18rem"
-            >
-              <div class="card-header border-0">ReceiptIQ</div>
-              <div class="card-body">
-                <p class="card-text">
-                  One tool to extract data from receipts and manage your
-                  workflow.
-                </p>
-                <p class="text-muted">
-                  ReceiptIQ helps teams process receipts faster, smarter and
-                  more efficiently, delivering the visibility and data-driven
-                  insights to mitigate risk and ensure compliance.
-                </p>
-                <div class="text-small">
-                  <a href="https://receiptiq.co/">receiptiq</a>
-                </div>
-              </div>
-            </div>
-            <div
-              class="card m-3 border"
-              style="max-width: 20rem; max-height: 18rem"
-            >
-              <div class="card-header border-0">Hummingbird</div>
-              <div class="card-body">
-                <p class="card-text">
-                  Customizable, Feature complete, lightweight payroll software
-                  supporting single and mutli-employer features as well as a
-                  flexible review approval cycle.
-                </p>
-                <div class="text-small">
-                  <a href="https://github.com/PeterKahenya/hummingbird"
-                    >hummingbird</a
+          <h2 class="h3 title text-success">Select Projects</h2>
+          <div class="row row-cols-1 row-cols-md-2 g-3">
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body py-2">
+                  <h3 class="h6 mb-1">ReceiptIQ</h3>
+                  <p class="card-text small mb-1">
+                    Extract data from receipts and manage your workflow.
+                  </p>
+                  <a
+                    class="small"
+                    href="https://github.com/brawl-ai/receiptiq_api"
+                    >receiptiq_api</a
+                  >
+                  ·
+                  <a
+                    class="small"
+                    href="https://github.com/brawl-ai/receiptiq_web"
+                    >receiptiq_web</a
                   >
                 </div>
               </div>
             </div>
-            <div
-              class="card m-3 border"
-              style="max-width: 20rem; max-height: 18rem"
-            >
-              <div class="card-header border-0">Dew</div>
-              <div class="card-body">
-                <p class="card-text">
-                  This is a tiny task/todo management app that supports
-                  adding/updating tasks, marking tasks as complete, and
-                  intelligently searching your tasks
-                </p>
-                <div class="text-small">
-                  <a href="https://github.com/PeterKahenya/dew">dew</a>
-                </div>
-              </div>
-            </div>
-            <div
-              class="card m-3 border"
-              style="max-width: 20rem; max-height: 18rem"
-            >
-              <div class="card-header border-0">Plant Cure</div>
-              <div class="card-body">
-                <p class="card-text">
-                  This is a vision(CNN-based) model to detect plant diseases
-                  from images of infected leaves
-                </p>
-                <div class="text-small">
-                  <a href="https://github.com/PeterKahenya/plant_cure"
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body py-2">
+                  <h3 class="h6 mb-1">Plant Cure</h3>
+                  <p class="card-text small mb-1">
+                    CNN-based vision model that detects plant diseases from
+                    images of infected leaves.
+                  </p>
+                  <a
+                    class="small"
+                    href="https://github.com/PeterKahenya/plant_cure"
                     >plant_cure</a
                   >
                 </div>
-              </div>
-            </div>
-            <div class="card m-3 border" style="max-width: 20rem">
-              <div class="card-header border-0">Tawi</div>
-              <div class="card-body">
-                <p class="card-text">
-                  Template Repo for a django, guncorn, nginx, docker, k8s,
-                  digitalocean, github-actions CI/CD pipeline
-                </p>
-                <a class="card-link" href="https://github.com/PeterKahenya/tawi"
-                  >tawi</a
-                >
               </div>
             </div>
           </div>
@@ -565,7 +675,6 @@
 
         <hr />
       </main>
-      <main></main>
     </div>
     <script src="assets/js/bootstrap.min.js"></script>
   </body>
