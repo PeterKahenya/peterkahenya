@@ -41,10 +41,23 @@ body{margin-top:20px;}
     position: relative;
 }
 
-@media (max-width: 767px) {
+/* Dates hang 207px left of each event, outside the 960px container. They
+   only fit once the page margin is wide enough (~1260px); below that,
+   stack them above each event instead of letting them clip off-screen. */
+@media (max-width: 1259px) {
     .timeline .event {
         padding-top: 30px;
     }
+}
+
+.timeline .event ul {
+    list-style: disc;
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+}
+
+.timeline .event ul li {
+    margin-bottom: 0.35rem;
 }
 
 .timeline .event:last-of-type {
@@ -69,7 +82,7 @@ body{margin-top:20px;}
     min-width: 120px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1259px) {
     .timeline .event:before {
         left: 0px;
         text-align: left;
@@ -92,24 +105,4 @@ body{margin-top:20px;}
     .timeline .event:after {
         left: -31.8px;
     }
-}
-
-.rtl .timeline {
-    border-left: 0;
-    text-align: right;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
-    border-right: 3px solid #01b33c;
-}
-
-.rtl .timeline .event::before {
-    left: 0;
-    right: -170px;
-}
-
-.rtl .timeline .event::after {
-    left: 0;
-    right: -55.8px;
 }
