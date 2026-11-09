@@ -1,0 +1,44 @@
+# Peter Kahenya
+
+> Software engineer in Nairobi, Kenya. Forward Deployed Engineer at Turing, building agentic AI workflows, MCP services and production APIs. Previously backend, data and automation work at VibesMeet, Humentum and PwC.
+
+This file summarizes https://peterkahenya.com/ in plain Markdown. Keep it in sync with index.html.
+
+## Profile
+
+- [Website](https://peterkahenya.com/): skills, experience, qualifications and projects
+- [CV (PDF, October 2026)](https://peterkahenya.com/assets/docs/Peter%20Kahenya%20CV%20October%202026.pdf): full CV
+- [GitHub](https://github.com/PeterKahenya): code and projects
+- [LinkedIn](https://www.linkedin.com/in/peter-kahenya/): professional profile
+
+## Experience
+
+- Forward Deployed Engineer, Turing (Aug 2025 - present): agentic workflows, agentic tools and MCP services for third-party LLMs, reinforcement learning environments for evaluating agents on tool use and computer use, production APIs
+- Lead Backend Engineer (Contract), VibesMeet LLC (Mar 2025 - Jul 2025): split a monolith into microservices on AWS Lambda; recommendation engine on AWS Personalize that doubled engagement and retention
+- Senior Fullstack Engineer, Humentum (Nov 2023 - Mar 2025): training platform serving 16K+ users a month across 15+ countries; data pipelines (Airflow, Alteryx, Microsoft Fabric) for funder dashboards; compliance automation that cut execution time by 50%
+- Senior Associate, Tax Technology, PwC (Mar 2021 - Nov 2023): reporting and compliance applications including e-invoicing; RPA (UiPath) and ETL (Alteryx, Power BI) that cut audit effort by 60%
+- Software Engineer, Kipya Africa (Oct 2019 - Dec 2020): e-commerce platform with real-time video and chat support
+
+## Skills
+
+- Languages: Python, JavaScript/TypeScript, C++, Kotlin (Android), Rust
+- AI & Agents: OpenAI GPT, Claude, Gemini, LangGraph, MCP, Vertex AI, SageMaker, AWS Personalize
+- Backend & APIs: Django, FastAPI, Express.js, REST, GraphQL, gRPC
+- Frontend: React, Next.js, Tailwind CSS
+- Databases: PostgreSQL, MongoDB, Neo4j, ChromaDB (vector)
+- Cloud & DevOps: AWS (Lambda), Kubernetes, GitHub Actions, Pub/Sub, Grafana LGTM stack
+- Data & BI: Airflow, Alteryx, Microsoft Fabric, Power BI
+- Automation & RPA: Zapier, Make, n8n, UiPath
+
+## Qualifications
+
+- Bachelor of Science, Computer Science, University of Nairobi (2015 - 2019)
+- McKinsey.org Forward Program (Dec 2025)
+- Agentic Design with LangGraph, LangChain (2025)
+- Large Language Models: Foundation Models from the Ground Up & LLM Applications through Production, Databricks on edX (2023 - 2024)
+- Data Science and Machine Learning, Africa Data School (2023)
+
+## Projects
+
+- [ReceiptIQ API](https://github.com/brawl-ai/receiptiq_api) and [web app](https://github.com/brawl-ai/receiptiq_web): extract data from receipts and manage the workflow
+- [Plant Cure](https://github.com/PeterKahenya/plant_cure): CNN-based vision model that detects plant diseases from leaf images

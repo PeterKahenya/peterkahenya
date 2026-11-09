@@ -43,6 +43,61 @@
       content="Peter Kahenya, Software Engineer: agentic AI workflows, backend platforms, data pipelines"
     />
     <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Structured data: who this site is about (keep in sync with the page) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://peterkahenya.com/#person",
+            "name": "Peter Kahenya",
+            "url": "https://peterkahenya.com/",
+            "email": "mailto:peterkahenyanjoki@gmail.com",
+            "jobTitle": "Software Engineer",
+            "description": "Software engineer in Nairobi building agentic AI workflows, scalable backend platforms and data pipelines.",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Turing",
+              "url": "https://www.turing.com/"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Nairobi",
+              "addressCountry": "KE"
+            },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "University of Nairobi"
+            },
+            "knowsAbout": [
+              "Agentic AI",
+              "Model Context Protocol (MCP)",
+              "Large language models",
+              "Backend engineering",
+              "Data pipelines",
+              "Python",
+              "TypeScript",
+              "AWS",
+              "Kubernetes"
+            ],
+            "sameAs": [
+              "https://github.com/PeterKahenya",
+              "https://www.linkedin.com/in/peter-kahenya/"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://peterkahenya.com/#website",
+            "url": "https://peterkahenya.com/",
+            "name": "Peter Kahenya",
+            "about": { "@id": "https://peterkahenya.com/#person" },
+            "author": { "@id": "https://peterkahenya.com/#person" }
+          }
+        ]
+      }
+    </script>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Favicons -->
@@ -243,7 +298,7 @@
             <div
               class="col d-flex flex-column justify-content-center align-items-center"
             >
-              <h2 class="display-6 title">Peter Kahenya</h2>
+              <h1 class="display-6 title">Peter Kahenya</h1>
               <p class="text-body-secondary">
                 I build scalable platforms that delight users!
               </p>
@@ -335,9 +390,23 @@
 
       <main>
         <hr />
+        <!-- About -->
+        <div class="container">
+          <h2 class="h3 title text-success">About</h2>
+          <p>
+            I'm a software engineer based in Nairobi, Kenya. I'm currently a
+            Forward Deployed Engineer at Turing, where I design and build
+            agentic AI workflows, MCP services and the APIs behind them.
+            Before that I led backend engineering at VibesMeet, built training
+            and data platforms at Humentum, and delivered tax technology,
+            automation and analytics solutions at PwC.
+          </p>
+        </div>
+
+        <hr />
         <!-- Skills Section -->
         <div class="container">
-          <h3 class="title text-success">Skills</h3>
+          <h2 class="h3 title text-success">Skills</h2>
           <table class="table table-bordered align-middle">
             <tbody>
               <tr>
@@ -387,10 +456,10 @@
         <hr />
         <!-- Experience -->
         <div class="container">
-          <h3 class="title text-success">Experience</h3>
+          <h2 class="h3 title text-success">Experience</h2>
           <ul class="timeline">
             <li class="event" data-date="Aug 2025 - Present">
-              <h4>Forward Deployed Engineer - Turing</h4>
+              <h3>Forward Deployed Engineer - Turing</h3>
               <ul>
                 <li>
                   Forward deployed to design and implement agentic
@@ -416,7 +485,7 @@
               </ul>
             </li>
             <li class="event" data-date="Mar 2025 - Jul 2025">
-              <h4>Lead Backend Engineer (Contract) - VibesMeet LLC</h4>
+              <h3>Lead Backend Engineer (Contract) - VibesMeet LLC</h3>
               <ul>
                 <li>
                   Broke a monolithic system into microservices deployed
@@ -434,7 +503,7 @@
               </ul>
             </li>
             <li class="event" data-date="Nov 2023 - Mar 2025">
-              <h4>Senior Fullstack Engineer - Humentum</h4>
+              <h3>Senior Fullstack Engineer - Humentum</h3>
               <ul>
                 <li>
                   Led design and development of a training platform
@@ -460,7 +529,7 @@
               </ul>
             </li>
             <li class="event" data-date="Mar 2021 - Nov 2023">
-              <h4>Senior Associate, Tax Technology - PwC</h4>
+              <h3>Senior Associate, Tax Technology - PwC</h3>
               <ul>
                 <li>
                   Led development of bespoke applications and
@@ -485,7 +554,7 @@
               </ul>
             </li>
             <li class="event" data-date="Oct 2019 - Dec 2020">
-              <h4>Software Engineer - Kipya Africa</h4>
+              <h3>Software Engineer - Kipya Africa</h3>
               <ul>
                 <li>
                   Built an e-commerce platform with real-time video and
@@ -504,7 +573,7 @@
         <!-- Qualifications -->
         <hr />
         <div class="container">
-          <h3 class="title text-success">Qualifications</h3>
+          <h2 class="h3 title text-success">Qualifications</h2>
           <ul class="list-unstyled m-4">
             <li class="mb-4">
               <p class="fs-5 mb-1">Bachelor of Science, Computer Science</p>
@@ -562,12 +631,12 @@
         <!-- Projects section -->
         <hr />
         <div class="container">
-          <h3 class="title text-success">Select Projects</h3>
+          <h2 class="h3 title text-success">Select Projects</h2>
           <div class="row row-cols-1 row-cols-md-2 g-3">
             <div class="col">
               <div class="card h-100">
                 <div class="card-body py-2">
-                  <h4 class="h6 mb-1">ReceiptIQ</h4>
+                  <h3 class="h6 mb-1">ReceiptIQ</h3>
                   <p class="card-text small mb-1">
                     Extract data from receipts and manage your workflow.
                   </p>
@@ -588,7 +657,7 @@
             <div class="col">
               <div class="card h-100">
                 <div class="card-body py-2">
-                  <h4 class="h6 mb-1">Plant Cure</h4>
+                  <h3 class="h6 mb-1">Plant Cure</h3>
                   <p class="card-text small mb-1">
                     CNN-based vision model that detects plant diseases from
                     images of infected leaves.
